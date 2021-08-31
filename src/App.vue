@@ -1,28 +1,90 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app id="inspire" class="pa-5">
+    <img 
+    src="./assets/valo.png" 
+    class="main-bg">
+    <v-main>
+      <v-container >
+        <v-row justify="center">
+          <v-col cols="10">
+              <v-card 
+                min-height="60vh"
+                class="card-gradient pa-6 mt-16 mx-12"
+                rounded="xl"
+              >
+                <v-card-title class="text-h3">
+                  <img src="./assets/valo-logo.svg" width="40" class="mr-3 my-3">
+                    Riot Pro League
+                  <v-spacer />
+                  <p class="text-body-1 mb-0 mt-6">
+                    Organised by:
+                    <v-chip
+                      rounded
+                      color="black"
+                      class="font-weight-bold text-body-1"
+                    >
+                      <v-avatar left>
+                        <v-img src="./assets/riot-logo.png"></v-img>
+                      </v-avatar>
+                      Riot Games
+                    </v-chip>
+                  </p>
+                </v-card-title>
+                <v-card-subtitle>
+                  <v-row dense class="text-h6">
+                    <v-col cols="auto">
+                      Valorant
+                    </v-col>
+                    <v-col cols="auto">
+                      8/8 Teams (5v5)
+                    </v-col>
+                    <v-col cols="auto">
+                      Groups then Double Elimination
+                    </v-col>
+                  </v-row>
+                </v-card-subtitle>
+                <v-card-text>
+                  <v-divider></v-divider>
+                  <v-row class="my-2 text-body-1" justify="space-between">
+                    <v-col cols="auto">Semi-finals</v-col>
+                    <v-col cols="auto">Finals</v-col>
+                    <v-col cols="auto">Grand Final</v-col>
+                  </v-row>
+                  <v-divider class="mb-5"></v-divider>
+                  <bracket />
+                </v-card-text>
+              </v-card>
+
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  import bracket from "./components/bracket.vue";
+  export default {
+    name: 'app',
+    components: {
+      bracket
+    }
   }
-}
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.main-bg {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  image-rendering: optimizespeed;
+  background-position: top;
+  background-size: cover;
+}
+.card-gradient {
+  background: rgba(41, 47, 66, 0.8) !important;
 }
 </style>
+
