@@ -86,5 +86,6 @@
 .card-gradient {
   background: rgba(41, 47, 66, 0.8) !important;
 }
+
 </style>
 

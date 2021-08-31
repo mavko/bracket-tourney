@@ -7,40 +7,52 @@
 						<div class="matchup">
 							<div class="participants">
                                     <v-alert
-                                        border="right"
-                                        color="primary"
+                                        color="black"
                                         min-width="200"
-                                        class="text-body-1 font-weight-bold mb-1"
+                                        class="text-body-1 font-weight-bold mb-1 overflow-hidden"
+                                        rounded="lg"
                                     >
+                                        <v-avatar left color="white" size="30" class="mr-1">
+                                            <img src="../assets/100_Thieves_logo.svg" alt="">
+                                        </v-avatar>
                                         100 Thieves
+                                        <div class="v-alert__border__winner"></div>
                                     </v-alert>
                                     <v-alert
-                                        border="right"
-                                        color="gray"
-                                        class="mb-1"
-                                        dense
+                                        color="black"
+                                        class="text-body-1 font-weight-bold mb-1 overflow-hidden"
+                                        rounded="lg"  
                                     >
+                                        <v-avatar left color="white" size="30" class="mr-1">
+                                            <img src="../assets/cloud-data.svg" alt="">
+                                        </v-avatar>
                                         Evil Geniuses
+                                        <div class="v-alert__border__loser"></div>
                                     </v-alert>
 							</div>
 						</div>
 						<div class="matchup">
 							<div class="participants">
                                 <v-alert
-                                        border="right"
-                                        color="primary"
-                                        min-width="200"
-                                        class="text-body-1 font-weight-bold black--text mb-1"
+                                    color="black"
+                                    min-width="200"
+                                    class="text-body-1 font-weight-bold mb-1 overflow-hidden"
                                 >
+                                    <v-avatar left color="white" size="30" class="mr-1">
+                                        <img src="../assets/ig.svg" alt="">
+                                    </v-avatar>
                                     OG
+                                    <div class="v-alert__border__winner"></div>
                                 </v-alert>
                                 <v-alert
-                                    border="right"
-                                    color="gray"
-                                    class="mb-1"
-                                    dense
+                                    color="black"
+                                    class="text-body-1 font-weight-bold mb-1 overflow-hidden"
                                 >
+                                    <v-avatar left color="white" size="30" class="mr-1">
+                                        <img src="../assets/overwatch.svg" alt="">
+                                    </v-avatar>
                                     NRG
+                                    <div class="v-alert__border__loser"></div>
                                 </v-alert>
 							</div>
 						</div>
@@ -60,14 +72,20 @@
                                         min-width="200"
                                         class="text-body-1 font-weight-bold black--text mb-1"
                                     >
+                                        <v-avatar left color="white" size="30" class="mr-1">
+                                            <img src="../assets/secret.svg" alt="">
+                                        </v-avatar>
                                         Team Secret
                                     </v-alert>
                                     <v-alert
                                         border="right"
                                         color="gray"
                                         class="mb-1"
-                                        dense
+                                        
                                     >
+                                        <v-avatar left color="white" size="30" class="mr-1">
+                                            <img src="../assets/liquid.svg" alt="">
+                                        </v-avatar>
                                         Virtus Pro
                                     </v-alert>
 							</div>
@@ -80,14 +98,20 @@
                                         min-width="200"
                                         class="text-body-1 font-weight-bold black--text mb-1"
                                     >
+                                        <v-avatar left color="white" size="30" class="mr-1">
+                                            <img src="../assets/dotaunderload.svg" alt="">
+                                        </v-avatar>
                                         Natus Vincere
                                     </v-alert>
                                     <v-alert
                                         border="right"
                                         color="gray"
                                         class="mb-1"
-                                        dense
+                                        
                                     >
+                                        <v-avatar left color="white" size="30" class="mr-1">
+                                            <img src="../assets/hearthstone.svg" alt="">
+                                        </v-avatar>
                                         BIG
                                     </v-alert>
 							</div>
@@ -108,7 +132,7 @@
                                         border="right"
                                         color="gray"
                                         class="mb-1"
-                                        dense
+                                        
                                     >
                                         100 Thieves
                                     </v-alert>
@@ -128,7 +152,7 @@
                                         border="right"
                                         color="gray"
                                         class="mb-1"
-                                        dense
+                                        
                                     >
                                         Team Secret
                                     </v-alert>
@@ -166,7 +190,7 @@
                                         border="right"
                                         color="gray"
                                         class="mb-1"
-                                        dense
+                                        
                                     >
                                         Evil Geniuses
                                     </v-alert>
@@ -251,5 +275,27 @@ export default {
 }
 .bracket .round.finals .winners .connector .line {
 	height: 1.5rem;
+}
+.v-alert__border__winner {
+    border-style: solid;
+    border-width: 4px;
+    content: "";
+    position: absolute;
+    opacity: 1;
+    color: #10baa8;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+.v-alert__border__loser {
+    border-style: solid;
+    border-width: 4px;
+    content: "";
+    position: absolute;
+    opacity: 1;
+    color: #ba1010;
+    height: 100%;
+    right: 0;
+    top: 0;
 }
 </style>
