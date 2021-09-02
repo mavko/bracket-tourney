@@ -4,12 +4,11 @@
     src="./assets/valo.png" 
     class="main-bg">
     <v-main>
-      <v-container >
+      <v-container fluid>
         <v-row justify="center">
-          <v-col cols="10">
+          <v-col cols="12" md="12" lg="12">
               <v-card 
-                min-height="60vh"
-                class="card-gradient pa-6 mt-16 mx-12"
+                class="card-gradient pa-6 mt-16"
                 rounded="xl"
               >
                 <v-card-title class="text-h3">
@@ -86,6 +85,8 @@
 .card-gradient {
   background: rgba(41, 47, 66, 0.8) !important;
 }
-
+.v-application {
+  background: #0F1423 !important;
+}
 </style>
 
