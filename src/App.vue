@@ -69,6 +69,8 @@ export default {
 }
 </script>
 <style scoped>
+/* Valo background positioning
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .main-bg {
 	position: absolute;
 	z-index: 0;
@@ -80,6 +82,8 @@ export default {
 	background-position: top;
 	background-size: cover;
 }
+/* Overriding vuetify framework styling with custom css
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .card-gradient {
 	background: rgba(41, 47, 66, 0.8) !important;
 }

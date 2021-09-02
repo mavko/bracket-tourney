@@ -14,6 +14,8 @@ export default {
 }
 </script>
 <style scoped>
+/* Custom css lines to connect the team badges visually
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .connector {
 	left: 30%;
 	top: 33%;
@@ -61,6 +63,8 @@ export default {
 	border-bottom-width: 2px;
 	border-bottom-right-radius: 20px;
 }
+/* Minor media queries for desktop and laptop
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width: 1300px) {
 	.line {
 		width: 29.8rem !important;

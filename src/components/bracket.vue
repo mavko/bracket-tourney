@@ -229,7 +229,8 @@ export default {
 }
 </script>
 <style scoped>
-/* status color */
+/* Status color for teams - winners / losers
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .v-alert__border__winner {
 	border-style: solid;
 	border-width: 4px;
