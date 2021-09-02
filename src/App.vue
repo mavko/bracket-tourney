@@ -6,6 +6,10 @@
 				<v-row justify="center">
 					<v-col cols="12" md="12" lg="12">
 						<v-card class="card-gradient pa-6 mt-16" rounded="xl">
+							<!---------------- 
+							Header title
+							Showcase League title and league sponsors or organizers 
+							----------------->
 							<v-card-title class="text-h3">
 								<img
 									src="./assets/valo-logo.svg"
@@ -28,6 +32,10 @@
 									</v-chip>
 								</p>
 							</v-card-title>
+							<!---------------- 
+							Header subtitle
+							Showcase Game, teams and tournmanet type
+							----------------->
 							<v-card-subtitle>
 								<v-row dense class="text-h6">
 									<v-col cols="auto">
@@ -37,10 +45,14 @@
 										8/8 Teams (5v5)
 									</v-col>
 									<v-col cols="auto">
-										Groups then Double Elimination
+										Groups then Single Elimination
 									</v-col>
 								</v-row>
 							</v-card-subtitle>
+							<!---------------- 
+							Bracket titles
+							Showcase tournament stages titles
+							----------------->
 							<v-card-text>
 								<v-divider></v-divider>
 								<v-row class="my-2 text-body-1" justify="space-between">

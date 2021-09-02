@@ -1,6 +1,15 @@
 <template>
 	<v-container fluid>
-		<seperator-top />
+
+		<!---------------- 
+		Custom lines drawn to link tournament stages
+		----------------->
+		<connectors />
+
+		<!---------------- 
+		Starter group first row
+		Showcase teams
+		----------------->
 		<v-row no-gutters justify="space-between">
 			<v-col cols="12" md="3" lg="3" class="flex-grow-0 flex-shrink-0">
 				<v-alert
@@ -28,7 +37,11 @@
 				</v-alert>
 			</v-col>
 		</v-row>
-		<!-- second row teams -->
+		
+		<!---------------- 
+		Starter group second row
+		Showcase teams
+		----------------->
 		<v-row no-gutters justify="space-between" class="my-5">
 			<v-col cols="12" md="3" lg="3" class="flex-grow-0 flex-shrink-0">
 				<v-alert
@@ -56,10 +69,15 @@
 				</v-alert>
 			</v-col>
 		</v-row>
-		<!-- third row finalists + grand final -->
 
+		<!---------------- 
+		Tournament final and grand final
+		Showcase teams
+		----------------->
 		<v-row no-gutters dense justify="space-between" class="my-5">
-			<!-- filler spot -->
+			<!-- 
+				Filler First Column
+			-->
 			<v-col
 				cols="12"
 				md="3"
@@ -67,7 +85,11 @@
 				style="min-width: 200px;"
 				class="flex-grow-1 flex-shrink-0"
 			></v-col>
-			<!-- finalists -->
+
+			<!---------------- 
+			Finalists groupm, third row, second column 
+			Showcase teams
+			----------------->
 			<v-col
 				cols="12"
 				md="3"
@@ -99,7 +121,9 @@
 					<div class="v-alert__border__loser"></div>
 				</v-alert>
 				<v-spacer class="my-8">
-					<!-- spacer between finalists -->
+				<!-- 
+					spacer between finalists 
+				-->
 				</v-spacer>
 				<v-alert
 					color="black"
@@ -125,7 +149,11 @@
 					<div class="v-alert__border__loser"></div>
 				</v-alert>
 			</v-col>
-			<!-- grand finalists -->
+
+			<!---------------- 
+			Grand finalists groupm third row, last column 
+			Showcase teams
+			----------------->
 			<v-col
 				cols="12"
 				md="2"
@@ -159,7 +187,11 @@
 				</v-alert>
 			</v-col>
 		</v-row>
-		<!-- third lower bracket -->
+
+		<!---------------- 
+		Starter group fourth row
+		Showcase teams
+		----------------->
 		<v-row no-gutters justify="space-between">
 			<v-col cols="12" md="3" lg="3" class="flex-grow-0 flex-shrink-0">
 				<v-alert
@@ -187,7 +219,11 @@
 				</v-alert>
 			</v-col>
 		</v-row>
-		<!-- fourth lower bracket -->
+
+		<!---------------- 
+		Starter group fifth row
+		Showcase teams
+		----------------->
 		<v-row no-gutters justify="space-between" class="my-5">
 			<v-col cols="12" md="3" lg="3" class="flex-grow-0 flex-shrink-0">
 				<v-alert
@@ -219,12 +255,12 @@
 </template>
 
 <script>
-import seperatorTop from './seperator-top.vue'
+import connectors from './connectors.vue'
 
 export default {
 	name: 'brackets',
 	components: {
-		seperatorTop,
+		connectors
 	},
 }
 </script>

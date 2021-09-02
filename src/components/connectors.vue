@@ -10,7 +10,7 @@
 </template>
 <script>
 export default {
-	name: 'seperatorTop',
+	name: 'connectors',
 }
 </script>
 <style scoped>
