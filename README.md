@@ -1,5 +1,5 @@
 # Bracket tournament test
-![alt text](https://i.imgur.com/vx4MoAM.png)
+![alt text](https://i.imgur.com/5DsA5V3.png)
 
 
 ## Project setup
