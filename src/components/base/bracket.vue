@@ -38,7 +38,7 @@
 				md="3"
 				lg="3"
 				style="min-width: 200px;"
-				class="flex-grow-1 flex-shrink-0"
+				class="flex-grow-0 flex-shrink-0"
 			>
 				<final-group-one />
 

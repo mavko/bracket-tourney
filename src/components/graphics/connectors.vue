@@ -71,10 +71,18 @@ export default {
 }
 @media screen and (max-width: 1450px) {
 	.line {
-		width: 32.4rem !important;
+		width: 34rem !important;
 	}
 	.merger {
 		width: 13rem !important;
+	}
+}
+@media screen and (max-width: 800px) {
+	.line {
+		display: none !important;
+	}
+	.merger {
+		display: none !important;
 	}
 }
 </style>

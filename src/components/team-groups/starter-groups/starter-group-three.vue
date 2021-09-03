@@ -2,6 +2,7 @@
 	<div>
 		<v-row no-gutters justify="space-between">
 			<v-col cols="12" md="3" lg="3" class="flex-grow-0 flex-shrink-0">
+				<p class="hidden-md-and-up">Semi finals</p>
 				<v-alert
 					light
 					min-width="300"

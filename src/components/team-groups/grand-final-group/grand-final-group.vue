@@ -4,11 +4,12 @@
 		md="2"
 		lg="2"
 		style="min-width: 200px;"
-		class="d-flex align-content-center flex-wrap"
+		class="d-lg-flex align-content-lg-center flex-lg-wrap"
 	>
+		<p class="hidden-md-and-up">Grand Finals</p>
 		<v-alert
 			light
-			min-width="300"
+			min-width="250"
 			class="text-body-1 font-weight-bold black--text mb-2 overflow-hidden"
 			rounded="lg"
 			elevation="12"
@@ -32,7 +33,7 @@
 		</v-alert>
 		<v-alert
 			light
-			min-width="300"
+			min-width="250"
 			class="text-body-1 font-weight-bold mt-2 overflow-hidden"
 			rounded="lg"
 			elevation="12"

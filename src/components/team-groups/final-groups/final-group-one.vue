@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<p class="hidden-md-and-up">Finals</p>
 		<v-alert
 			light
 			min-width="300"
